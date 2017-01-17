@@ -85,6 +85,10 @@ div#resume-link a:visited {
     text-decoration: none;
 }
 
+img {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
 /* Style the right nav menu dots background */
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: #b2b2b2;
@@ -95,11 +99,6 @@ div#resume-link a:visited {
     width: 100%;
     margin: 0 auto;
     font-size: 1.5em;
-}
-
-.slide img {
-    margin: 10px 0;
-    border-radius: 2px;
 }
 
 .slide hr {
@@ -136,12 +135,6 @@ div#resume-link a:visited {
     font-size: 20px;
 }
 
-/* Main page image */
-.project-img-main {
-    width: 80%;
-    height: auto;
-}
-
 /* 'more...' link under project image */
 .project-desc-span {
     color: #df691a;
@@ -164,7 +157,9 @@ div#resume-link a:visited {
 .about-section p {
     color: #eba184;
     font-weight: bold;
-    text-align: justify;
+    text-align: left;
+    font-size: 1.3em;
+    margin-bottom: 14px;
 }
 
 #projects-link {
@@ -173,6 +168,10 @@ div#resume-link a:visited {
 
 #projects-link:hover {
     cursor: pointer;
+}
+
+.about-section img {
+    border-radius: 2px;
 }
 
 .about-section ul li {
@@ -195,8 +194,30 @@ div#resume-link a:visited {
     color: #cdc8b1;
 }
 
+.projects-section img {
+    margin: 10px 0;
+    border-radius: 2px;
+    width: 90%;
+    height: auto;
+}
+
+/* Main page image
+.project-img-main {
+    width: 80%;
+    height: auto;
+}*/
+
 .projects-section hr {
     border-top: 1px solid #cdc8b1;
+}
+
+/* Note: img properties are set in js file; therefore had to use !important to override */
+#resume-img {
+    position: relative !important;
+    width: 75% !important;
+    height: auto !important;
+    margin: 80px 0px 60px !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 .contact-section h1 {

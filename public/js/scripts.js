@@ -20,8 +20,9 @@ $(document).ready(() => {
     $('#fullpage').fullpage({
         // slate gray: yes
         sectionsColor: ['#2b3e50', '#647381', '#008b8b', '#cd5c5c', '#008b8b'],
-        anchors: ['Page1', 'Page2', 'Page3', 'Page4'],
+        anchors: ['Page1', 'Page2', 'Page3', 'Page4', 'Page5'],
         menu: '#menu',
+        scrollOverflow: true,
         navigation: true,
         scrollingSpeed: 1000
     });
