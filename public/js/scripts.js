@@ -18,7 +18,7 @@ $(document).ready(() => {
 
     // Initialize fullpage plugin
     $('#fullpage').fullpage({
-        // slate gray:
+        // slate gray: yes
         sectionsColor: ['#2b3e50', '#647381', '#008b8b', '#cd5c5c', '#008b8b'],
         anchors: ['Page1', 'Page2', 'Page3', 'Page4'],
         menu: '#menu',
