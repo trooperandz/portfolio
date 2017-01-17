@@ -1,0 +1,256 @@
+body {
+  padding: 50px;
+  font-family: 'Poiret One', cursive;
+  /* check out Josephine */
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#menu {
+    z-index:70;
+    position:fixed
+}
+
+#menu li {
+    display:inline-block;
+    margin:10px;
+    color:#000;
+    background: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 1.3em;
+}
+
+#menu li a {
+    color: ghostwhite;
+    transition: .5s;
+}
+
+#menu li a:hover {
+    color: #df691a;
+}
+
+#menu li.active {
+    background:#666;
+    background:rgba(208, 208, 208, .5);
+}
+
+#menu li.active a {
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#menu li a, #menu li.active a {
+    padding:9px 18px;
+    display:block;
+}
+
+#menu {
+    padding:0;
+}
+
+div#resume-link {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    padding: 9px 18px;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+div#resume-link a {
+    color: #d3d3d3;
+    font-weight: bold;
+    transition: .4s;
+}
+
+div#resume-link a:hover {
+    color: white;
+}
+
+div#resume-link a:visited {
+    text-decoration: none;
+}
+
+/* Style the right nav menu dots background */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #b2b2b2;
+}
+
+.intro p {
+    /* Override original 50% */
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+.slide img {
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.slide hr {
+    width: 83%;
+    border-top: 1px solid #ccc;
+}
+
+.info-modal img {
+    width: 30%;
+    height: auto;
+    margin: 0 8px;
+    cursor: zoom-in;
+}
+
+.project-img-modal img {
+    width: 100%;
+}
+
+.project-img-modal .modal-body {
+    padding: 0;
+}
+
+/*Image close button*/
+#modal-close-btn {
+    /*opacity: 0.5;*/
+    color: #000;
+    z-index: 1;
+    float: right;
+    position: absolute;
+    cursor: pointer;
+    right: 1px;
+    top: 5px;
+    color: gray;
+    font-size: 20px;
+}
+
+/* Main page image */
+.project-img-main {
+    width: 80%;
+    height: auto;
+}
+
+/* 'more...' link under project image */
+.project-desc-span {
+    color: #df691a;
+    cursor: pointer;
+}
+
+.main-section h1 {
+    color: #4aa;
+    /*color: #00B7FF;*/
+}
+
+.main-section p {
+    color: #708090;
+}
+
+.about-section h1 {
+    color: #ccba8f;
+}
+
+.about-section p {
+    color: #eba184;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#projects-link {
+    color: #d3d3d3;
+}
+
+#projects-link:hover {
+    cursor: pointer;
+}
+
+.about-section ul li {
+    display: inline-flex;
+    padding: 14px 1.5%;
+    color: ghostwhite;
+}
+
+.about-section ul li a {
+    font-size: 18px;
+    transition: .4s;
+}
+
+.about-section ul li a:hover, .about-section ul li a:visited {
+    color: #d3d3d3;
+    cursor: pointer;
+}
+
+.projects-section h1 {
+    color: #cdc8b1;
+}
+
+.projects-section hr {
+    border-top: 1px solid #cdc8b1;
+}
+
+.contact-section h1 {
+    /*color: #24446e;*/
+    color: #ded6b4;
+}
+
+.contact-section button {
+    background-color: #24446e;
+}
+
+form label {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: ghostwhite;
+}
+
+input.form-control {
+    height: 25px;
+    margin-bottom: 20px;
+    background: none;
+    border-bottom: 1px solid #24446e;
+    border-left: 1px solid #24446e;
+    border-right: 1px solid #24446e;
+    color: #ded6b4;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input.form-control:focus {
+    border-bottom: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+}
+
+textarea.form-control {
+    height: 200px;
+    margin-bottom: 17px;
+    background: none;
+    border: 1px solid #24446e;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+footer a {
+    padding: 0px 12px;
+    font-size: 23px;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: #ccc;
+}

@@ -1,0 +1,213 @@
+{{!-- Info modal --}}
+<div class="modal fade info-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                <h3 id="modal-title"></h3>
+            </div>
+            <div class="modal-body text-center">
+                <p id="modal-desc"></p>
+                <div class="modal-img"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+         </div>
+    </div>
+</div>
+
+{{!-- Project Image Modal --}}
+<div class="modal project-img-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <span class="glyphicon glyphicon-remove" id="modal-close-btn" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"></span>
+                <div class="project-img"></div>
+            </div>
+         </div>
+    </div>
+</div>
+
+<ul id="menu">
+    <li data-menuanchor="Page1"><a href="#Page1">Home</a></li>
+    <li data-menuanchor="Page2"><a href="#Page2">About Me</a></li>
+    <li data-menuanchor="Page3"><a href="#Page3">Projects</a></li>
+    <li data-menuanchor="Page4"><a href="#Page4">Contact Me</a></li>
+</ul>
+{{!--
+<div id="resume-link">
+    <a class="fa fa-file-o" href="#"> <span>Resume</span></a>
+</div>
+--}}
+<div id="fullpage">
+    <div class="section active" id="section0">
+        <div class="intro main-section text-center">
+            <h1>Matthew Holland</h1>
+            <p>Full Stack Developer</p>
+        </div>
+    </div>
+
+    <div class="section" id="section1">
+        <div class="intro about-section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>About Me</h1>
+                        <br>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <p>Full stack javascript and PHP developer, best described as a curious and enthusiastic humanoid.  I love developing applications from the ground-up, and discovering ways to implement new technologies and use them to improve existing applications.  My primary focus is in back-end development, but I am also highly proficient in front-end implementation.</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <p>I currently work for a small consulting business as the lead developer, creating and maintaining web applications for client and employee use via the LAMP stack. Primarily self-taught, I recently enrolled in a coding Bootcamp in Austin, TX to improve my skills and become proficient in the latest technologies and coding practices.</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <p>Please contact me if you would like to collaborate, or if you have any questions about web development in general.  It is in the spirit of our profession that we share our ideas and passions for the Wonderful World of Web. I am also available for hire if you are currently seeking developers.  Please check out some <a href="#Page3" id="projects-link"> samples </a> of my work.</p>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <hr>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-envelope-open"> mtholland10@gmail.com</i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/matt-holland" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"> https://www.linkedin.com/in/matt-holland</i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/trooperandz" target="_blank"><i class="fa fa-github" aria-hidden="true"> https://github.com/trooperandz</i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-file-text" aria-hidden="true"> View Resume</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section projects-section" id="section2">
+        <div class="slide">
+            <div class="intro text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>React News</h1>
+                            <img class="project-img-main" src="img/reactnews.png" alt="React News Site" />
+                            <p>Access the NY Times API by news category or headline search, via a ReactJS-powered...<span class="project-desc-span" data-title="React News" data-desc="Access the NY Times API by news category or headline search, via a ReactJS-powered interface.  This single-page NodeJS app allows the user to save favorite articles for later viewing, and utilizes a MongoDB database for data storage, via the Mongoose ORM (MERN stack)." data-imageSrc="reactNews">more</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="intro text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>Scrapinator</h1>
+                            <img class="project-img-main" src="img/scrapinator.png" alt="Scrapinator Site" />
+                            <p>Bringing the latest science news to you, this NodeJS app utilizes...<span class="project-desc-span" data-title="Scrapinator" data-desc="Bringing the latest science news to you, this NodeJS app utilizes the node Request module to scrape the most recent science news from foxnews.com.  Scraped data is saved in a MongoDB database, and features session data and user login functionality.  Logged in users may save their favorite news stories and also submit comments to any story." data-imageSrc="scrapinator">more</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="intro text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>Client Reporting System</h1>
+                            <img class="project-img-main" src="img/onlinereporting.png" alt="Client Reporting Site" />
+                            <p>This single-page application was built for a small consulting business which specializes in...<span class="project-desc-span" data-title="Client Reporting Site" data-desc="This single-page application was built for a small consulting business which specializes in automotive consulting.  It features user login, session data delegating special user access rules, document uploading and retrieval, dynamic data tables, data exports and printer-friendly formats.  Data is stored in a MySQL database, and all server-side code is written in PHP (LAMP stack).  It is currently being used by automotive service centers across the United States to report automotive data." data-imageSrc="onlineReporting">more</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="intro text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>RO Survey System</h1>
+                            <img class="project-img-main" src="img/rosurvey.png" alt="RO Survey Site" />
+                            <p>Automotive repair order survey application built for a small consulting business used to...<span class="project-desc-span" data-title="Repair Order Survey System" data-desc="Automotive repair order survey application built for a small consulting business used by contractors to assess the current performance state of dealership service centers.  Features user login, session data for specific user access rules, graphs, dynamic data tables, document storage, AJAX-powered forms and data exports/downloads.  All server-side code is written in PHP, and data is stored in a MySQL database (LAMP stack)." data-imageSrc="roSurvey">more</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="intro text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>Profitability Calculator</h1>
+                            <img class="project-img-main" src="img/profitcalculator.png" alt="Profitability Calculator Site" />
+                            <p>Profitability calculator built for a small automotive consulting business, for...<span class="project-desc-span" data-title="Profitability calculator" data-desc="Profitability calculator built for a small automotive consulting business, for projecting service center profit potential based on level one automotive services.  Features user login, session data for specific user access rules, dynamic AJAX-powered data entry tables, document storage and data exports/downloads.  All server-side code is written in PHP, and data is stored in a MySQL database (LAMP stack)." data-imageSrc="profitCalculator">more</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="intro text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>Taskinator</h1>
+                            <img class="project-img-main" src="img/taskinator.png" alt="Taskinator Site" />
+                            <p>Taskinator is a personal organizer application built with NodeJS...<span class="project-desc-span" data-title="Taskinator" data-desc="Taskinator is a personal organizer application built with NodeJS, which utilizes the MVC design pattern as its directory structure.  The program features dynamic data tables (via the DataTables plugin), page tabs, AJAX-powered forms, document storage and retrieval, user signup and login, email reminders and session data for determining specific access to program features.  Data is stored in a MySQL database, which is managed by the Sequelize ORM." data-imageSrc="taskinator">more</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="section3">
+        <div class="intro contact-section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Contact Me</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <form class="text-left" method="POST" action="/contact">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="input-name" name="input-name" />
+                                <label for="name">Email</label>
+                                <input type="text" class="form-control" id="input-email" name="input-email" />
+                                <label for="input-message">Message</label>
+                                <textarea class="form-control" id="input-message" name="input-message" placeholder="What would you like to discuss?"></textarea>
+                                <button type="submit" class="btn btn-warning">Contact</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {{!-- /.fullpage --}}
+
+<footer>
+    <a><i class="fa fa-envelope-open" data-toggle="tooltip" data-placement="left" title="Email Me"></i></a>
+    <a><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-hidden="true"></i></a>
+    <a><i class="fa fa-github" data-toggle="tooltip" data-placement="top" title="GitHub" aria-hidden="true"></i></a>
+    <a><i class="fa fa-file-text" data-toggle="tooltip" data-placement="top" title="Resume" aria-hidden="true"></i></a>
+</footer>
