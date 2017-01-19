@@ -1,3 +1,29 @@
+/* Note: original colors:
+    Home:
+        bg: #2b3e50;
+        h1: #4aa;
+        p: #708090;
+    About:
+        bg: #647381;
+        h1: #ccba8f;
+        p: #eba184;
+        links: #d3d3d3;
+    Projects:
+        bg: #008b8b;
+        h1: #cdc8b1;
+        description: #ebebeb;
+        more link: #df691a;
+    Resume:
+        bg: #385972;
+    Contact:
+        bg: #008b8b;
+        h1: #ded6b4;
+        label: ghostwhite;
+        input border: border-bottom: 1px solid #24446e;
+                      border-left: 1px solid #24446e;
+                      border-right: 1px solid #24446e;
+        btn: #24446e;
+*/
 body {
   padding: 50px;
   font-family: 'Poiret One', cursive;
@@ -9,12 +35,14 @@ body {
 }
 
 a {
-    color: ghostwhite;
+    color: #ccc;
     text-decoration: none;
+    transition: .4s;
 }
 
 a:hover {
     text-decoration: none;
+    color: ghostwhite;
 }
 
 #menu {
@@ -34,21 +62,22 @@ a:hover {
 
 #menu li a {
     color: ghostwhite;
-    transition: .5s;
+    transition: .4s;
 }
 
 #menu li a:hover {
-    color: #df691a;
+    color: #7EA0B7;
 }
 
 #menu li.active {
     background:#666;
     background:rgba(208, 208, 208, .5);
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.14),0 1px 15px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 #menu li.active a {
     color: whitesmoke;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-decoration: none;
 }
 
@@ -163,15 +192,25 @@ img {
 }
 
 #projects-link {
-    color: #d3d3d3;
+    color: #ccba8f;
 }
 
 #projects-link:hover {
     cursor: pointer;
+    color: #ccc;
 }
 
 .about-section img {
     border-radius: 2px;
+    margin-top: 17px;
+}
+
+.about-section p {
+    color: #c3cdd4;
+}
+
+.about-section hr {
+    margin-bottom: 12px;
 }
 
 .about-section ul li {
@@ -181,13 +220,23 @@ img {
 }
 
 .about-section ul li a {
-    font-size: 18px;
+    font-size: 13px;
     transition: .4s;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .about-section ul li a:hover, .about-section ul li a:visited {
-    color: #d3d3d3;
+    color: #dbceb0;
     cursor: pointer;
+}
+
+.about-section i {
+    font-size: 20px;
 }
 
 .projects-section h1 {
@@ -216,7 +265,8 @@ img {
     width: 75%;
     height: auto;
     margin: 80px 0px 60px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+    /*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);*/
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.14),0 1px 15px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 .contact-section h1 {
@@ -225,7 +275,13 @@ img {
 }
 
 .contact-section button {
-    background-color: #24446e;
+    background-color: #7EA0B7;
+    transition: .4s;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.14),0 1px 15px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.contact-section button:hover {
+    background-color: #7190a4;
 }
 
 form label {
@@ -238,9 +294,9 @@ input.form-control {
     height: 25px;
     margin-bottom: 20px;
     background: none;
-    border-bottom: 1px solid #24446e;
-    border-left: 1px solid #24446e;
-    border-right: 1px solid #24446e;
+    border-bottom: 1px solid #7EA0B7;
+    border-left: 1px solid #7EA0B7;
+    border-right: 1px solid #7EA0B7;
     color: #ded6b4;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -256,7 +312,11 @@ textarea.form-control {
     height: 200px;
     margin-bottom: 17px;
     background: none;
-    border: 1px solid #24446e;
+    border: 1px solid #7EA0B7;
+}
+
+textarea.form-control:focus {
+    border: 1px solid #dbdbdb;
 }
 
 footer {
@@ -268,9 +328,11 @@ footer {
 footer a {
     padding: 0px 12px;
     font-size: 23px;
+    color: #ccc;
+    transition: .4s;
 }
 
 footer a:hover {
     cursor: pointer;
-    color: #ccc;
+    color: #7EA0B7;
 }

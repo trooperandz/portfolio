@@ -19,10 +19,13 @@ $(document).ready(() => {
     // Initialize fullpage plugin
     $('#fullpage').fullpage({
         // slate gray: yes
-        sectionsColor: ['#2b3e50', '#647381', '#008b8b', '#cd5c5c', '#008b8b'],
+        // redish color: #cd5c5c
+        // another nice gray color: #475B63
+        sectionsColor: ['#2b3e50', '#5F7A8E', '#2E6171', '#385972', '#0B4F6C'],
         anchors: ['Page1', 'Page2', 'Page3', 'Page4', 'Page5'],
         menu: '#menu',
         scrollOverflow: true,
+        scrollOverflowReset: true,
         navigation: true,
         scrollingSpeed: 1000
     });
