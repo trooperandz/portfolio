@@ -40,9 +40,15 @@ a {
     transition: .4s;
 }
 
-a:hover {
+a:hover, a:focus {
+    outline: none;
+    outline-offset: none;
     text-decoration: none;
     color: ghostwhite;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
 }
 
 #menu {
@@ -58,6 +64,7 @@ a:hover {
     -webkit-border-radius: 0;
     border-radius: 0;
     font-size: 1.3em;
+    letter-spacing: 2.5px;
 }
 
 #menu li a {
@@ -202,11 +209,13 @@ img {
 
 .about-section img {
     border-radius: 2px;
-    margin-top: 17px;
+    margin-top: 28px;
 }
 
 .about-section p {
     color: #c3cdd4;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.45em;
 }
 
 .about-section hr {
@@ -228,6 +237,7 @@ img {
     letter-spacing: 1.5px;
     font-weight: bold;
     font-style: normal;
+    color: #dbceb0;
 }
 
 .about-section ul li a:hover, .about-section ul li a:visited {
@@ -250,27 +260,34 @@ img {
     height: auto;
 }
 
-/* Main page image
-.project-img-main {
-    width: 80%;
-    height: auto;
-}*/
-
 .projects-section hr {
     border-top: 1px solid #cdc8b1;
+}
+
+/* Resume download icon */
+.fa-download {
+    position: absolute;
+    top: 7.8%;
+    right: 15%;
+    z-index: 3;
+    transition: .4s;
+}
+
+.fa-download:hover {
+    cursor: pointer;
+    color: #ccc;
 }
 
 .resume-section img {
     position: relative;
     width: 75%;
     height: auto;
-    margin: 80px 0px 60px;
-    /*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);*/
+    margin: 7.5% 0;
+    -webkit-box-shadow: 0 2px 15px 0 rgba(0,0,0,0.14),0 1px 15px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
     box-shadow: 0 2px 15px 0 rgba(0,0,0,0.14),0 1px 15px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 .contact-section h1 {
-    /*color: #24446e;*/
     color: #ded6b4;
 }
 
@@ -280,12 +297,11 @@ img {
     box-shadow: 0 2px 15px 0 rgba(0,0,0,0.14),0 1px 15px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
-.contact-section button:hover {
+.contact-section button:hover, .contact-section button:visited, .contact-section button:active  {
     background-color: #7190a4;
 }
 
 form label {
-    margin-bottom: 12px;
     font-size: 18px;
     color: ghostwhite;
 }
@@ -295,17 +311,22 @@ input.form-control {
     margin-bottom: 20px;
     background: none;
     border-bottom: 1px solid #7EA0B7;
-    border-left: 1px solid #7EA0B7;
-    border-right: 1px solid #7EA0B7;
     color: #ded6b4;
     -webkit-box-shadow: none;
     box-shadow: none;
+    font-size: 1.5em;
 }
 
 input.form-control:focus {
     border-bottom: 1px solid #dbdbdb;
     border-left: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+#contact-label {
+    margin-bottom: 15px;
 }
 
 textarea.form-control {
@@ -313,10 +334,15 @@ textarea.form-control {
     margin-bottom: 17px;
     background: none;
     border: 1px solid #7EA0B7;
+    color: #ded6b4;
+    font-size: 1.5em;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 textarea.form-control:focus {
     border: 1px solid #dbdbdb;
+    color: #ded6b4;
 }
 
 footer {

@@ -36,11 +36,7 @@
     <li data-menuanchor="Page4"><a href="#Page4">resume</a></li>
     <li data-menuanchor="Page5"><a href="#Page5">contact</a></li>
 </ul>
-{{!--
-<div id="resume-link">
-    <a class="fa fa-file-o" href="#"> <span>Resume</span></a>
-</div>
---}}
+
 <div id="fullpage">
     <div class="section active" id="section0">
         <div class="intro main-section text-center">
@@ -78,7 +74,7 @@
                         <hr>
                         <ul>
                             <li>
-                                <a href="#"><i class="fa fa-envelope-open"></i> mtholland10@gmail.com</a>
+                                <a href="mailto:mtholland10@gmail.com" target="_top"><i class="fa fa-envelope-open"></i> mtholland10@gmail.com</a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/in/matt-holland" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> www.linkedin.com/in/matt-holland</a>
@@ -184,7 +180,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div><img id="resume-img" src="img/resume.png" /></div>
+                        <div>
+                            <a href="/resume"><i class="fa fa-download" data-toggle="tooltip" data-placement="left" title="Download" aria-hidden="true"></i></a>
+                            <img id="resume-img" src="img/resume.png" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,6 +196,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Contact Me</h1>
+                        <hr>
                     </div>
                 </div>
                 <div class="row">
@@ -204,12 +204,12 @@
                         <form class="text-left" method="POST" action="/contact">
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" id="input-name" name="input-name" />
+                                <input type="text" class="form-control" id="contact-name" name="contact-name" />
                                 <label for="name">Email</label>
-                                <input type="text" class="form-control" id="input-email" name="input-email" />
-                                <label for="input-message">Message</label>
-                                <textarea class="form-control" id="input-message" name="input-message" placeholder="What would you like to discuss?"></textarea>
-                                <button type="submit" class="btn btn-warning">Contact</button>
+                                <input type="text" class="form-control" id="contact-email" name="contact-email" />
+                                <label for="contact-message" id="contact-label">Message</label>
+                                <textarea class="form-control" id="contact-message" name="contact-message" placeholder="What would you like to discuss?"></textarea>
+                                <button id="contact-btn" type="submit" class="btn">Contact</button>
                             </div>
                         </form>
                     </div>
@@ -220,8 +220,8 @@
 </div> {{!-- /.fullpage --}}
 
 <footer>
-    <a><i class="fa fa-envelope-open" data-toggle="tooltip" data-placement="left" title="Email Me"></i></a>
+    <a href="mailto:mtholland10@gmail.com" target="_top"><i class="fa fa-envelope-open" data-toggle="tooltip" data-placement="left" title="Email Me"></i></a>
     <a><i class="fa fa-linkedin-square" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-hidden="true"></i></a>
     <a><i class="fa fa-github" data-toggle="tooltip" data-placement="top" title="GitHub" aria-hidden="true"></i></a>
-    <a><i class="fa fa-file-text" data-toggle="tooltip" data-placement="top" title="Resume" aria-hidden="true"></i></a>
+    <a href="/resume"><i class="fa fa-file-text" data-toggle="tooltip" data-placement="top" title="Download Resume" aria-hidden="true"></i></a>
 </footer>
