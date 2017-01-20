@@ -362,3 +362,24 @@ footer a:hover {
     cursor: pointer;
     color: #7EA0B7;
 }
+
+/* Media queries */
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    #menu {
+        /* Hide top menu on small devices */
+        display: none;
+    }
+
+    .about-section img {
+        /* Add margin to profile pic on small devices */
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #resume-section-heading {
+        display: none;
+    }
+}
