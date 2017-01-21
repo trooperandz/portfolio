@@ -1,10 +1,10 @@
-/* "start": "pm2 ./bin/www" */
 {
   "name": "portfolio",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "pm2 ./bin/www"
+    "start": "NODE_ENV=production && pm2 ./bin/www",
+    "test": "NODE_ENV=development && node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
