@@ -1,10 +1,9 @@
+/* "start": "pm2 ./bin/www" */
 {
   "name": "portfolio",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "run": "NODE_ENV=production pm2 ./bin/www",
-    "start-dev": "node ./bin/www",
     "start": "pm2 ./bin/www"
   },
   "dependencies": {
