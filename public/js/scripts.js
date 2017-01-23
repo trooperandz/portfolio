@@ -30,6 +30,9 @@ $(document).ready(() => {
         scrollOverflow: true,
         scrollOverflowReset: true,
         navigation: true,
+        slidesNavigation: true,
+        continuousVertical: true,
+        continuousHorizontal: true,
         scrollingSpeed: 1000
     });
 
