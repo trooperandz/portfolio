@@ -400,6 +400,14 @@ footer a:hover {
         font-size: 12px;
     }
 
+    #projects-section-heading {
+        margin-bottom: 58px;
+    }
+
+    .projects-section .fp-tableCell {
+        vertical-align: top;
+    }
+
     .resume-section img {
         width: 100%;
         margin-top: 0;
@@ -418,7 +426,7 @@ footer a:hover {
 }
 
 /* Medium and large devices */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     #resume-section-heading {
         display: none;
     }
