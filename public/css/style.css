@@ -422,4 +422,8 @@ footer a:hover {
     #resume-section-heading {
         display: none;
     }
+
+    #projects-section-heading {
+        display: none;
+    }
 }
