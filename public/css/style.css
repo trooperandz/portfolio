@@ -410,6 +410,11 @@ footer a:hover {
         right: 7%;
     }
 
+    /* Reduce margin for the vertical nav dots */
+    #fp-nav.right {
+        right: 5px;
+    }
+
 }
 
 /* Medium and large devices */
