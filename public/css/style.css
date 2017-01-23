@@ -34,6 +34,10 @@ body {
     text-align: center;
 }
 
+ul {
+    padding: 0;
+}
+
 a {
     color: #ccc;
     text-decoration: none;
@@ -213,6 +217,9 @@ img {
 .about-section img {
     border-radius: 2px;
     margin-top: 28px;
+    /* Note: also adjusted in media queries*/
+    height: 360;
+    width: auto;
 }
 
 .about-section p {
@@ -283,6 +290,7 @@ img {
 
 .resume-section img {
     position: relative;
+    /* Note: width is adjusted for small screens */
     width: 75%;
     height: auto;
     margin: 7.5% 0;
@@ -375,8 +383,23 @@ footer a:hover {
     }
 
     .about-section img {
-        /* Add margin to profile pic on small devices */
+        /* Profile pic */
         margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-section ul li a {
+        font-size: 12px;
+    }
+
+    .resume-section img {
+        width: 100%;
+    }
+
+    .fa-download {
+        top: 16%;
+        right: 7%;
     }
 
 }
