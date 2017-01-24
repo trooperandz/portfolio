@@ -1,33 +1,6 @@
-/* Note: original colors:
-    Home:
-        bg: #2b3e50;
-        h1: #4aa;
-        p: #708090;
-    About:
-        bg: #647381;
-        h1: #ccba8f;
-        p: #eba184;
-        links: #d3d3d3;
-    Projects:
-        bg: #008b8b;
-        h1: #cdc8b1;
-        description: #ebebeb;
-        more link: #df691a;
-    Resume:
-        bg: #385972;
-    Contact:
-        bg: #008b8b;
-        h1: #ded6b4;
-        label: ghostwhite;
-        input border: border-bottom: 1px solid #24446e;
-                      border-left: 1px solid #24446e;
-                      border-right: 1px solid #24446e;
-        btn: #24446e;
-*/
 body {
   padding: 50px;
   font-family: 'Poiret One', cursive;
-  /* check out Josephine */
 }
 
 .text-center {
@@ -142,6 +115,7 @@ img {
     width: 100%;
     margin: 0 auto;
     font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .slide hr {
@@ -349,6 +323,7 @@ textarea.form-control {
     border: 1px solid #7EA0B7;
     color: #ded6b4;
     font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
 }
