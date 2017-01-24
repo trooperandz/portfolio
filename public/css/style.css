@@ -384,6 +384,11 @@ footer a:hover {
         display: none;
     }
 
+    /* Make sure that modal project images stay in one row */
+    .info-modal img {
+        margin: 0 4px;
+    }
+
     /* Hide left/right horizontal scroll arrows */
     .fp-controlArrow {
         display: none;
