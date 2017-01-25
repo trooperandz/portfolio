@@ -404,6 +404,13 @@ footer a:hover {
         /*margin-bottom: 58px;*/
     }
 
+    /* Reduce size of project site link */
+    .projects-section .project-link {
+        letter-spacing: normal;
+        font-weight: normal;
+        font-size: .8em;
+    }
+
     .projects-section .fp-tableCell {
         vertical-align: top;
     }
