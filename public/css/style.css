@@ -237,6 +237,14 @@ img {
     color: #cdc8b1;
 }
 
+.project-link {
+    position:absolute;
+    right: 60px;
+    top: 0;
+    cursor: pointer;
+    color: #ccc;
+}
+
 .projects-section img {
     margin: 10px 0;
     border-radius: 2px;
