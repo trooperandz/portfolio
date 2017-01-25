@@ -237,10 +237,14 @@ img {
     color: #cdc8b1;
 }
 
-.project-link {
+.projects-section h2 {
+    display: inline;
+}
+
+.projects-section a {
     position:absolute;
-    right: 60px;
-    top: 0;
+    right: 6.5%;
+    top: 20px;
     cursor: pointer;
     color: #ccc;
 }
