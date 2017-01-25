@@ -17,6 +17,8 @@ $(document).ready(() => {
         profitCalculator: ['img/profitcalculator-docs.png', 'img/profitcalculator-costcalc.png', 'img/profitcalculator-users.png'],
 
         reactNews: ['img/reactnews-search.png'],
+
+        hangman: ['img/hangman.png'],
     };
 
     // Initialize fullpage plugin
