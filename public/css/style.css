@@ -246,7 +246,6 @@ img {
     right: 6.5%;
     top: 16px;
     cursor: pointer;
-    color: #ccc;
     transition: .4s;
     letter-spacing: 1px;
     font-weight: bold;
@@ -372,7 +371,7 @@ footer a:hover {
 }
 
 /* Media queries */
-/* Small devices (tablets, 768px and up) */
+/* Small devices */
 @media (max-width: 768px) {
     #menu {
         /* Hide top menu on small devices */
