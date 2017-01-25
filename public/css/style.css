@@ -247,6 +247,11 @@ img {
     top: 20px;
     cursor: pointer;
     color: #ccc;
+    transition: .4s;
+}
+
+.projects-section a:hover {
+    color: #7EA0B7;
 }
 
 .projects-section img {
