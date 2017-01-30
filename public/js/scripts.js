@@ -27,7 +27,7 @@ $(document).ready(() => {
         // redish color: #cd5c5c
         // another nice gray color: #475B63
         sectionsColor: ['#2b3e50', '#5F7A8E', '#2E6171', '#385972', '#0B4F6C'],
-        anchors: ['Page1', 'Page2', 'Page3', 'Page4', 'Page5'],
+        anchors: ['Home', 'Profile', 'Projects', 'Resume', 'Contact'],
         menu: '#menu',
         scrollOverflow: true,
         scrollOverflowReset: true,
