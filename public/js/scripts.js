@@ -6,7 +6,7 @@ $(document).ready(() => {
 
     // Modal images datastore for projects
     const modalProjectImages = {
-        taskinator: ['img/taskinator-login.png', 'img/taskinator-adduser.png'],
+        taskinator: ['img/taskinator-login.png', 'img/taskinator-user.png'],
 
         scrapinator: ['img/scrapinator-login.png', 'img/scrapinator-newslist.png', 'img/scrapinator-signup.png'],
 
