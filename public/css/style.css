@@ -159,12 +159,13 @@ img {
 }
 
 .main-section h1 {
-    color: #4aa;
+    color: #708090;
     /*color: #00B7FF;*/
 }
 
 .main-section p {
-    color: #708090;
+    color: #466582;
+    /*color: #708090;*/
 }
 
 .about-section h1 {
