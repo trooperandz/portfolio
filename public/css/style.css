@@ -7,6 +7,11 @@ body {
     text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: Nunito;
+  font-weight: 200;
+}
+
 ul {
     padding: 0;
 }
@@ -138,6 +143,12 @@ img {
     padding: 0;
 }
 
+#modal-desc {
+  font-family: Nunito;
+  font-weight: 200;
+  letter-spacing: .5px;
+}
+
 /*Image close button*/
 #modal-close-btn {
     /*opacity: 0.5;*/
@@ -178,7 +189,7 @@ img {
     margin-bottom: 14px;
 }
 
-#projects-link {
+.projects-link {
     color: #ccba8f;
 }
 
