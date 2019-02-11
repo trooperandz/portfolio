@@ -364,7 +364,7 @@ textarea.form-control:focus {
 
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: 3px;
     right: 0;
 }
 
