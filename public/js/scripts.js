@@ -19,15 +19,18 @@ $(document).ready(() => {
         reactNews: ['img/reactnews-search.png'],
 
         hangman: ['img/hangman.png'],
+
+        spotify: ['img/spotify-detail.png', 'img/spotify-playlists.png', 'img/spotify-search.png'],
+
+        dashboard: ['img/dashboard.png'],
     };
 
     // Initialize fullpage plugin
     $('#fullpage').fullpage({
-        // slate gray: yes
-        // redish color: #cd5c5c
-        // another nice gray color: #475B63
-        sectionsColor: ['#2b3e50', '#5F7A8E', '#2E6171', '#385972', '#0B4F6C'],
-        anchors: ['Home', 'Profile', 'Projects', 'Resume', 'Contact'],
+        // sectionsColor: ['#2b3e50', '#5F7A8E', '#2E6171', '#385972', '#0B4F6C'],
+        sectionsColor: ['#5F7A8E', '#2E6171', '#385972', '#0B4F6C'],
+        // anchors: ['Home', 'Profile', 'Projects', 'Resume', 'Contact'],
+        anchors: ['Profile', 'Projects', 'Resume', 'Contact'],
         menu: '#menu',
         scrollOverflow: true,
         scrollOverflowReset: true,
