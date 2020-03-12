@@ -165,8 +165,10 @@ img {
 
 /* 'more...' link under project image */
 .project-desc-span {
-    color: #df691a;
+    color: orange;
     cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .main-section h1 {
